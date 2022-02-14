@@ -1,5 +1,5 @@
-#RealWorld (Conduit) Demo App 
-##AWS Elastic Container Service Setup
+# RealWorld (Conduit) Demo App 
+## AWS Elastic Container Service Setup
 
 This directory, iam, creates the following resources:
 - IAM Policy - An IAM Policy that allow access to Elastic Container Registries.

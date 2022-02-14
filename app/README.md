@@ -1,5 +1,5 @@
-#RealWorld (Conduit) Demo App 
-##AWS Elastic Container Service Setup
+# RealWorld (Conduit) Demo App 
+## AWS Elastic Container Service Setup
 
 This directory, app, creates the following resoures:
 - Security Groups - Security Groups for the Application Load Balancer and the EC2 container host instances.

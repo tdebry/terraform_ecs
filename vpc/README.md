@@ -1,5 +1,5 @@
-#RealWorld (Conduit) Demo App 
-##AWS Elastic Container Service Setup
+# RealWorld (Conduit) Demo App 
+## AWS Elastic Container Service Setup
 
 This directory, vpc, creates the following resoures:
 - VPC - The Virtual Private Cloud where all other resources will be created. Named 'Core' by default, but can be set using a variable named vpc_name.

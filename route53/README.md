@@ -1,5 +1,5 @@
-#RealWorld (Conduit) Demo App 
-##AWS Elastic Container Service Setup
+# RealWorld (Conduit) Demo App 
+## AWS Elastic Container Service Setup
 
 This directory, route53, creates the following resoures:
 - Route 53 Records - A record for the app, such as conduit.tomdebry.com, and the build host, such as build.conduit.tomdebry.com

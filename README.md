@@ -1,5 +1,5 @@
-#RealWorld (Conduit) Demo App 
-##AWS Elastic Container Service Setup
+# RealWorld (Conduit) Demo App 
+## AWS Elastic Container Service Setup
 
 The following directories contain Terraform modules that will setup an AWS account with the resources needed to host the Conduit demo app (listed in run order):
 - vpc - creates the VPC/subnets/build host
