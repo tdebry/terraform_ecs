@@ -1,0 +1,7 @@
+aws_region = "us-west-2"
+environment_type = "demo"
+key_name = "tom_aws_2"
+ami_id = "ami-02b05e04df16de7a9"
+environment_index = "01" 
+app_name = "conduit"
+domain_name = "tomdebry.com"

@@ -1,0 +1,16 @@
+[
+   {
+      "name": "conduit",
+      "image": "794740977188.dkr.ecr.us-west-2.amazonaws.com/realworld:latest",
+      "cpu": 0,
+      "memory": 1900,
+      "portMappings": [
+         {
+            "containerPort": 4100,
+            "hostPort": 4100,
+            "protocol": "tcp"
+         }
+      ],
+      "essential": true
+   }
+]

@@ -1,0 +1,5 @@
+aws_region = "us-west-2"
+environment_type = "demo"
+environment_index = "01"
+app_name = "conduit"
+domain_name = "tomdebry.com"
