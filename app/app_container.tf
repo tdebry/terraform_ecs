@@ -78,6 +78,12 @@ data "aws_iam_role" "task-execution" {
   name = "ecsTaskExecution"
 }
 
+data "aws_security_group" "build" {
+  tags = {
+    Name = "build-sg"
+  }
+}
+
 resource "aws_security_group" "app_lb" {
   name = format("%s-%s-%s-elb-sg", var.app_name, var.environment_type, var.environment_index)
   description = format("Elastic Load Balancer Security Group for %s %s-%s.", var.app_name, var.environment_type, var.environment_index)
@@ -125,6 +131,13 @@ resource "aws_security_group" "app_instance" {
     protocol = "tcp"
     security_groups = [aws_security_group.app_lb.id]
     description = "Web traffic from elb on port 4100."
+  }
+  ingress {
+    from_port = 22
+    to_port = 22
+    protocol = "tcp"
+    security_groups = [data.aws_security_group.build.id]
+    description = "SSH traffic on port 22 from build Security Group."
   }
   egress {
     from_port = 80
