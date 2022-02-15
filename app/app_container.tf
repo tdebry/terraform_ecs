@@ -201,7 +201,7 @@ resource "aws_autoscaling_group" "app" {
   health_check_type = "EC2"
   desired_capacity = 2
   launch_configuration = aws_launch_configuration.app.name
-  vpc_zone_identifier = [data.aws_subnet.PublicWeb-A.id, data.aws_subnet.PublicWeb-B.id]
+  vpc_zone_identifier = [data.aws_subnet.PrivateContainer-2A.id, data.aws_subnet.PrivateContainer-2B.id]
   target_group_arns = [aws_lb_target_group.app.arn]
   tag {
     key = "Name"
