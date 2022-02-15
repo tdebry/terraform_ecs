@@ -5,8 +5,10 @@ The following directories contain Terraform modules that will setup an AWS accou
 - vpc - creates the VPC/subnets/build host
 - iam - creates IAM roles/profiles
 - app - creates the ECS cluster and related resources
-- route53 - creates DNS records
-For each module two variable files are required. 
+- route53 - creates DNS records  
+
+For each module two variable files are required.
+
 One must include AWS IAM credentials:
 ```
 subaccount_access_key = “<ACCESS_KEY>“
